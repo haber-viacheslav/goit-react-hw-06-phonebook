@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContactItemButton = styled.button`
   display: inline-block;
   margin-left: auto;
-  max-width: 120px;
+  max-width: 110px;
   align-self: center;
   padding: 4px 12px;
   color: white;
