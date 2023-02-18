@@ -7,10 +7,9 @@ import { getVisibleContacts } from 'components/helpers/getVisibleContacts';
 
 const ContactList = () => {
   const contacts = useSelector(getContacts);
-  console.log(contacts);
-
   const filter = useSelector(getFilterValue);
   const visibleContacts = getVisibleContacts(filter, contacts);
+
   return (
     <ContactListWrp>
       {visibleContacts.map(({ name, number, id }) => (

@@ -6,7 +6,6 @@ import { setFilterValue } from 'redux/filterSlice';
 const Filter = () => {
   const dispatch = useDispatch();
   const filterValue = useSelector(getFilterValue);
-  console.log('value for filter', filterValue);
 
   const changeFilter = e => {
     const value = e.currentTarget.value.toLowerCase();
